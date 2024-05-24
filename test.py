@@ -1,3 +1,9 @@
+'''
+Author: chenjuan
+Version: V1.0
+Date: 2024-05-24 11:40:57
+Description: 
+'''
 #!/usr/bin/env python3
 
 import torch
@@ -35,9 +41,11 @@ def test(path):
 
 
 def main():
-    for i in range(10):
-        predict, prob, probs = test(f'./input/test-{i}.png')
-        print(f'expected {i}, actual {predict}, {prob}, {probs}')
+        predict, prob, probs = test(f'./input/test-12.png')
+        print(f'expected 1, actual {predict}, {prob}, {probs}')
+    # for i in range(12):
+        # predict, prob, probs = test(f'./input/test-{i}.png')
+        # print(f'expected {i}, actual {predict}, {prob}, {probs}')
 
 
 if __name__ == '__main__':
